@@ -1,21 +1,11 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2{
+  background-color: #000308;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +14,36 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  display: grid;
+  place-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .container {
+  grid-template-rows: 120px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  border: 1px solid black;
+  padding: 4px;
+  display: grid;
 }
+
+.drink-card1{
+  grid-column: 1;
+}
+
+.drink-card2{
+  grid-column: 2;
+}
+
+.drink-card3{
+  grid-column: 3;
+}
+
+.drink-card4{
+  grid-column: 4;
+}
+
+.drink-card5{
+  grid-column: 5;
+} */

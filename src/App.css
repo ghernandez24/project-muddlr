@@ -9,15 +9,13 @@ header{
   flex-direction: column;
   justify-content: center;
   color: white;
-  margin-bottom: 10px;
-}
+} 
 
-main {
+
+/* main {
   display: grid;
   place-content: center;
-}
-
-
+} */
 
 /* .container {
   grid-template-rows: 120px;

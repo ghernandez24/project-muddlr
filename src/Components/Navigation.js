@@ -3,7 +3,8 @@ import './Navigation.css'
 import { Link } from 'react-router-dom';
 
 function Navigation(props) {
-    return (<div>
+    return (
+    <div>
         <ul className='nav-links'>
 
             <Link to ='/'>
@@ -13,7 +14,6 @@ function Navigation(props) {
             <Link to='/about'>
                 <li>About</li>
             </Link>
-
         </ul>
     </div>
     )

@@ -6,6 +6,7 @@ import  { Route, Link } from 'react-router-dom';
 // Components 
 import Home from './Components/Home/Home';
 import DrinkDetails from './Components/DrinkDetails';
+import RandomCocktail from './Components/Home/RandomCocktail';
 import Navigation from './Components/Navigation/Navigation';
 import About from './Components/About';
 
@@ -22,9 +23,15 @@ function App() {
 
       <Navigation />
 
+      <Link to='/random'>
+        <button>Night Out? Try this new drink</button>
+      </Link>
+      
     <main>
 
       <Route path='/' exact component={Home} />
+
+      <Route path='/random' component={RandomCocktail} />
 
       <Route path='/about' component={About} />
       

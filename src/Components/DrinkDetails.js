@@ -42,7 +42,7 @@ if (!cocktailData){
  
     return (
 			<section className='drink-details'>
-				<img src={cocktailData.strDrinkThumb} alt={cocktailData.strCcategory} />
+				<img width ='300px'  src={cocktailData.strDrinkThumb} alt={cocktailData.strCcategory} />
 				<h2>{cocktailData.strDrink}</h2>
 				<h4>Ingredients</h4>
 				<ul>
@@ -50,7 +50,6 @@ if (!cocktailData){
 					return <li>{item}</li>
 				})}
 				
-	
 				</ul>
 
 				<h4> Recipe </h4>

@@ -3,10 +3,10 @@ import './App.css';
 import  { Route } from 'react-router-dom';
 
 // Components 
-import Home from './Components/Home';
+import Home from './Components/Home/Home';
 import DrinkDetails from './Components/DrinkDetails';
 import SearchBar from './Components/SearchBar';
-import Navigation from './Components/Navigation';
+import Navigation from './Components/Navigation/Navigation';
 import About from './Components/About';
 
 
@@ -15,14 +15,13 @@ function App() {
   return (
     <div className="App">
 
-<header>
-    <div className='logo'>Logo </div>
-      <h2>Muddl'r</h2>  
-</header>
+<nav>
+      <h1>Muddl'r</h1>  
+</nav>
 
       <Navigation />
 
-    <main className='container'>
+    <main>
 
       <SearchBar />
 
@@ -33,7 +32,6 @@ function App() {
       <Route path='/drink/:idDrink' component={DrinkDetails} />
 
     </main>
-
 
     </div>
   );

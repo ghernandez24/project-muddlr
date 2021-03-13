@@ -2,7 +2,7 @@ import React from 'react';
 import './Navigation.css'
 import { Link } from 'react-router-dom';
 
-function Navigation(props) {
+function Navigation( {setDrink} ) {
     return (
     <div>
         <ul className='nav-links'>

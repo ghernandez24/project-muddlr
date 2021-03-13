@@ -1,23 +1,36 @@
 .App {
   text-align: center;
-  
+  margin-bottom: 1rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 nav {
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	align-items: center;
-	min-height: 10vh;
   background: rgb(0, 0, 0);
   color: white;
 }
 
-
-.span {
-  display: inline-block;
+nav img {
+  width: 120px;
+  align-items: left;
 }
 
+.nav-links{
+  margin-top: 0;
+}
 
-.home-list {
-  list-style-type: none
+h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul{
+  padding-right: 40px;
 }

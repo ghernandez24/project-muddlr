@@ -6,7 +6,7 @@ const TequilaHome = () => {
 			<div>
 				<h2>Tequila Drinks</h2>
 				<div className='drink-container'>
-                    
+
 					<ul>
                         
 						<li>
@@ -56,7 +56,7 @@ const TequilaHome = () => {
 
 						<li>
 							<Link to='/drink/178332'>
-								<span>Smashed Melon Margarita</span>
+								<span>Smash Melon Margarita</span>
 								<img
 									width='175px'
 									src='https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg'

@@ -14,7 +14,7 @@ Muddl'r is a modern front end application utilizing React and a third party API-
 
 #### End Results
 <p align='center'>
-<img width="520" height="340" src='https://media.git.generalassemb.ly/user/34081/files/a1c86280-85ae-11eb-8c20-5039fc6db151'>
+<img width='520px' height='340px' src='https://media.git.generalassemb.ly/user/34081/files/a8af9f00-85c7-11eb-8fd2-6d8b57acd0b6'>
 </p>
 
 ### Technologies used 🖥️

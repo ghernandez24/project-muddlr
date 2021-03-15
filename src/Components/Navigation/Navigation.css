@@ -3,4 +3,6 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
+  font-size: 17px;
+  margin-top: 0;
 }

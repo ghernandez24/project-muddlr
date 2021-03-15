@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const WhiskeyHome = () => {
-    return (
-            <div>
-				<h2>Whiskey Drinks</h2>
+	return (
+		<div>
+			<h2>Whiskey Drinks</h2>
 			<div className='drink-container'>
 				<ul>
 					<li>
@@ -59,8 +59,8 @@ const WhiskeyHome = () => {
 					</li>
 				</ul>
 			</div>
-            </div>
-		);
+		</div>
+	);
 };
 
 export default WhiskeyHome;

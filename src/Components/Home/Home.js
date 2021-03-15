@@ -9,10 +9,10 @@ import VodkaHome from './VodkaHome';
 function Home() {
 	return (
 		<div className='home-list'>
-			<TequilaHome />
-
 			<WhiskeyHome />
-
+			
+			<TequilaHome />
+			
 			<VodkaHome />
 		</div>
 	);

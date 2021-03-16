@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Project Muddl'r
+Cocktail based app - utilizing React and CocktailDB
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About App
+🍸 🍹 🥃<br>
+Muddl'r is a modern front end application utilizing React and a third party API-CocktailDB. The app is compiled of several different components for functionality and progressive use. The reason for this project was to highlight some favorite cocktail that a user can look up the recipe for or even try a new random cocktail with the random feature I incorporated into this app. Being a former bartender, I wanted to create an app with easy functionality and navigation for the user.
 
-## Available Scripts
+### From the beginning to the end
 
-In the project directory, you can run:
+#### Initial wireframe
+<p align='center'>
+<img src='https://media.git.generalassemb.ly/user/34081/files/ff5baf80-85ac-11eb-972f-bb9aa6f202bb'>
+</p>
 
-### `npm start`
+#### End Results
+<p align='center'>
+<img width='520px' height='340px' src='https://media.git.generalassemb.ly/user/34081/files/a8af9f00-85c7-11eb-8fd2-6d8b57acd0b6'>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Technologies used 🖥️
+- React 
+- ReactRouter 
+- CSS Flex/Grid
+- VS Code Editor
+- CocktailDB - API
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation instructions
+All code is provided for. Simply enjoy and try out some coktails!
 
-### `npm test`
+### References Used 
+- https://reactjs.org/docs/getting-started.html
+- https://www.w3schools.com/react/
+- https://css-tricks.com/snippets/css/complete-guide-grid/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories 👩‍💻👨‍💻
+- As a user, I want to be able to look the recipe for a chosen cocktail.
+- As a user, I want to be able to see the image an ingredients needed to make a cocktail.
+- As a user, I want easy functionality and navigation from each cocktail back home. 
 
-### `npm run build`
+### MVP 🏆 🏆 🏆
+- Created a full working, interactive React application.
+- Succesfully integrated a third party API and made fecth calls for my components.
+- Currently there are 10 different components on this app for easy navigation and rendering in the future as I continue to build out this app. 
+- Utilized both CSS grid and flex on my styling. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Bronze 🥉 
+- Implemented random drink feature button
+- Dynamic CSS styling. Hoover styling in random drink button. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Planned Features 
+This porject I will continue to develop by: 
+- Adding CSS styling components.
+- Addding a search drink feature.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Hurdles 
+This being my first of many React applications utilizing a third party API, I learned how important it is to sift through the API and see if the goals are able to meet with planning and production. While working with my API the measurements and ingredients compiled as individual objects. As well when I searched for a drink by spirit all I got back was a definition for that spirit.
 
-### `npm run eject`
+#### Code Snippet (proud moment)
+Combining the drink measurements and ingredients.
+```	let recipe = [];
+				for (let i = 1; i < 15; i++) {
+					// create a string for the measure and the ingredient
+					if (res.drinks[0]['strMeasure' + i]) {
+						// and push into recipe
+						let ingredient =
+							res.drinks[0]['strMeasure' + i] +
+							' ' +
+							res.drinks[0]['strIngredient' + i];
+						recipe.push(ingredient);
+					}
+					// if the current measure exist
+				}
+				res.drinks[0].recipe = recipe;
+				setCocktailData(res.drinks[0]);
+			})
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Insperational Quote 
+"The secret of chnage is to foucs all of your energy , not on fighting the old, but on building the new" - Socrates

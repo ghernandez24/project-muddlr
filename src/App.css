@@ -52,3 +52,13 @@ ul{
 }
 
 nav button:hover {opacity: 1};
+
+@media screen and (max-width: 700px){
+  nav{
+    justify-content: center;
+    width: 100%;
+  }
+  nav button{
+    font-size: 12px;
+  }
+}

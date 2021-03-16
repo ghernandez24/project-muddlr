@@ -5,6 +5,7 @@ import './Home.css';
 import WhiskeyHome from './WhiskeyHome';
 import TequilaHome from './TequilaHome';
 import VodkaHome from './VodkaHome';
+import GinHome from './GinHome';
 
 function Home() {
 	return (
@@ -14,6 +15,8 @@ function Home() {
 			<TequilaHome />
 			
 			<VodkaHome />
+
+			<GinHome />
 		</div>
 	);
 }
